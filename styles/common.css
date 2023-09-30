@@ -45,6 +45,7 @@ a {
 .text {
   font-size: 14px;
   line-height: 24px;
+  text-align: justify;
 }
 
 .h1 {
@@ -100,7 +101,57 @@ ol {
   list-style-type: circle;
   padding: 0px 6px;
 }
-
+.left_border_text_dark {
+  padding: 10px 6px;
+  border-left: 3px solid var(--dark);
+}
 .name {
   color: var(--primary);
+}
+
+@media (max-width: 320px) {
+  .avatar {
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .h1 {
+    font-size: 36px;
+  }
+  .h2 {
+    font-size: 28px;
+  }
+  .h3 {
+    font-size: 24px;
+  }
+  .h4 {
+    font-size: 18px;
+  }
+  .h5 {
+    font-size: 16px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .left_border_text_dark {
+    padding: 6px 4px;
+    font-size: 14px;
+    border-left: 3px solid var(--dark);
+  }
+  .list_item > ul > li {
+    list-style-type: circle;
+    padding: 0px 4px;
+  }
+  ul,
+  ol {
+    line-height: 20px;
+    padding-inline-start: 0px;
+    font-size: 14px;
+  }
 }

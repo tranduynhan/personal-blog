@@ -1,8 +1,8 @@
 body {
   margin: auto;
-  width: 60vw;
+  width: 1200px;
   display: grid;
-  grid-template-columns: 15vw 45vw;
+  grid-template-columns: 35% 65%;
   grid-template-rows: 120px 500px 80px;
   grid-template-areas:
     "hd hd"
@@ -28,6 +28,7 @@ aside {
   grid-area: main;
 }
 #content {
+  margin-top: 12px;
   display: grid;
   grid-template-columns: 25% 25% 25%;
   grid-template-rows: 400px;
@@ -56,4 +57,76 @@ footer {
   color: var(--white);
   border-radius: 4px;
   padding: 12px;
+}
+
+@media (max-width: 320px) {
+  body {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #content > div {
+    margin: 12px 0px;
+    background-color: var(--default);
+    padding: 12px 8px;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  header {
+    padding: 12px 0px;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  body {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #content > div {
+    margin: 12px 0px;
+  }
+  header {
+    padding: 12px 0px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    width: 95vw;
+    grid-template-columns: 25vw 70vw;
+    grid-template-rows: 120px 600px 80px;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #content > div {
+    margin: 12px 0px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  body {
+    width: 95vw;
+    grid-template-columns: 25vw 70vw;
+    grid-template-rows: 120px 500px 80px;
+    grid-template-areas:
+      "hd hd"
+      "sd main"
+      "ft ft";
+    grid-row-gap: 12px;
+  }
+  #content {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 450px;
+    grid-column-gap: 5%;
+  }
 }
