@@ -5,15 +5,6 @@ body {
   flex-direction: column;
 }
 
-.text,
-.h3,
-.h4,
-.code_content,
-.list_item,
-.order_list_item {
-  margin: 6px 12px;
-}
-
 header > .h1 {
   padding: 16px 0px;
 }
@@ -34,10 +25,6 @@ header > .h1 {
   height: 50%;
 }
 
-.left_border_text_dark {
-  padding: 10px 6px;
-  border-left: 3px solid var(--dark);
-}
 ul,
 ol {
   margin-left: 16px;
@@ -49,4 +36,49 @@ ol {
   width: 1000px;
   height: 250px;
   background-color: var(--default);
+}
+@media (max-width: 800px) {
+  body {
+    padding: 36px;
+  }
+  .banner {
+    margin-left: -36px;
+    width: 872px;
+    height: 25vw;
+    background-color: var(--default);
+  }
+}
+@media (max-width: 320px) {
+  body {
+    width: 100vw;
+    padding: 12px;
+  }
+  .banner {
+    width: 100vw;
+    height: 60px;
+  }
+  .author_box {
+    margin: 12px 0px;
+  }
+  .author_content {
+    padding: 4px 12px;
+  }
+  .banner {
+    margin-left: -12px;
+    width: calc(100vw + 24px);
+    height: 25vw;
+  }
+  .code_content {
+    height: 120px;
+    width: 70vw;
+    overflow-x: scroll;
+  }
+  .text,
+  .h3,
+  .h4,
+  .code_content,
+  .list_item,
+  .order_list_item {
+    margin: 12px;
+  }
 }
