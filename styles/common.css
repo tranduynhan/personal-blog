@@ -2,6 +2,13 @@
   font-family: Roboto-Light;
   src: url(../fonts/Roboto-Light.ttf);
 }
+:root {
+  --primary: #02b3e4;
+  --dark: #666666;
+  --default: #efefef;
+  --white: #ffffff;
+  --black: #000000;
+}
 body {
   font-family: Roboto-Light;
 }
@@ -45,14 +52,9 @@ p {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
-:root {
-  --primary: #02b3e4;
-  --dark: #666666;
-  --default: #efefef;
-  --white: #ffffff;
-}
+
 a {
-  color: var(--primary);
+  color: var(--black);
   text-decoration: none;
 }
 .button {
