@@ -1,0 +1,27 @@
+header > .h1 {
+  padding: 16px 0px;
+}
+
+.author_box {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0px;
+}
+
+.author_content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.author_content p {
+  height: 50%;
+}
+@media (max-width: 320px) {
+  .author_box {
+    margin: 12px 0px;
+  }
+  .author_content {
+    padding: 4px 12px;
+  }
+}

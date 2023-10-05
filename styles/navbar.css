@@ -1,0 +1,9 @@
+nav {
+  grid-area: sd;
+  display: flex;
+  flex-direction: column;
+}
+nav > a,
+nav > div {
+  margin-bottom: 12px;
+}

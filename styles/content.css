@@ -1,0 +1,66 @@
+aside {
+  grid-area: main;
+}
+#content {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 400px;
+  grid-column-gap: 12.5%;
+}
+#content > div {
+  background-color: var(--default);
+  padding: 12px 8px;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#one > .h3 {
+  color: var(--primary);
+}
+#two {
+  background-color: var(--default);
+}
+#three {
+  background-color: var(--default);
+}
+@media (max-width: 320px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #content > div {
+    margin: 12px 0px;
+    background-color: var(--default);
+    padding: 12px 8px;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+@media (min-width: 321px) and (max-width: 600px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #content > div {
+    margin: 12px 0px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #content > div {
+    margin: 12px 0px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  #content {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 450px;
+    grid-column-gap: 5%;
+  }
+}
