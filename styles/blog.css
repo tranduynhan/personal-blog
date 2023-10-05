@@ -1,101 +1,25 @@
 @import url("./common.css");
+@import url("./header-blog.css");
+@import url("./banner.css");
 body {
   margin: auto;
   width: 800px;
   display: flex;
   flex-direction: column;
 }
-
-header > .h1 {
-  padding: 16px 0px;
-}
-
-.author_box {
-  display: flex;
-  flex-direction: row;
-  margin: 24px 0px;
-}
-
-.author_content {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
-.author_content p {
-  height: 50%;
-}
-
 ul,
 ol {
   margin-left: 16px;
 }
-.banner {
-  margin-left: -100px;
-  margin-top: 12px;
-  margin-bottom: 36px;
-  width: 1000px;
-  height: 250px;
-  background-color: var(--default);
-}
-.banner > img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-.banner > figcaption {
-  margin-top: -48px;
-  font-size: 36px;
-  color: var(--default);
-  font-weight: bold;
-  text-shadow: 2px 0 var(--dark), -2px 0 var(--dark), 0 2px var(--dark),
-    0 -2px var(--dark), 1px 1px var(--dark), -1px -1px var(--dark),
-    1px -1px var(--dark), -1px 1px var(--dark);
-}
 @media (max-width: 800px) {
   body {
     padding: 36px;
-  }
-  .banner {
-    margin-left: -36px;
-    width: 872px;
-    height: 25vw;
-    background-color: var(--default);
-  }
-  .banner > img {
-    height: 25vw;
-  }
-  .banner > figcaption {
-    margin-top: -36px;
-    font-size: 24px;
   }
 }
 @media (max-width: 320px) {
   body {
     width: 100vw;
     padding: 12px;
-  }
-  .banner {
-    width: 100vw;
-    height: 60px;
-  }
-  .banner > img {
-    height: 80px;
-  }
-  .banner > figcaption {
-    margin-top: -24px;
-    font-size: 16px;
-  }
-  .author_box {
-    margin: 12px 0px;
-  }
-  .author_content {
-    padding: 4px 12px;
-  }
-  .banner {
-    margin-left: -12px;
-    width: calc(100vw + 24px);
-    height: 25vw;
   }
   .code_content {
     height: 120px;
